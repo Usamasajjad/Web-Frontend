@@ -3,8 +3,15 @@
   <head>
   <title> Complete HTML </title>
   <meta charset="UTF-8">
-  <meta name="description" content="This document holds the implementation of everything I have learned about HTML.">
   <meta name="author" content="Usama Sajjad">
+  <meta name="description" content="This document holds the implementation of everything I have learned about HTML.">
+  <meta name="keywords" content="HTML, CSS">
+  <!-- Refresh webpage every 30 seconds 
+  <meta http-equiv="refresh" content="30">
+  -->
+  <!-- All links in this file will be opened at BASE/fileurl 
+  <base href="https://www.xyz.com/" target="_blank">
+  -->
   <style>  
     table, th, td {
       border: 1px solid black;
@@ -13,11 +20,16 @@
       background-color: yellow;
       color: black;
     }
+    .testClass {
+      background-color: yellow;
+      color: black;
+      padding: 10px;
+    }
   </style>
   </head>
   <body style="background-color: rgb(25, 0, 255);color: white;">
 
-    <h1 style="background-color: yellow;color: black;">BASIC HTML</h1>
+    <h1 style="background-color: yellow;color: black;">BASIC/FUNDAMENTAL HTML</h1>
 
     <hr style="color: white;">
 
@@ -152,13 +164,95 @@
       <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
       <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
     </div> 
-    <div style="background-color:red;color:white;padding:20px;">
+    <div style="background-color:yellow;color:black;padding:20px;">
       <h2>London</h2>
       <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
       <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
     </div> 
 
     <hr style="color: white;">
+
+    <div class="testClass"> 
+      <h2>Classes and IDs</h2>
+      <p> We first define the class in the internal or external CSS. We then assign the class to the element using Class="xyz"</p>
+      <p>This is a div with the class 'testclass'. The same class can be assigned to multiple elements.</p> 
+      <p>A single element can also have multiple classes (seperated by space)</p>
+      <p>Classes and IDs are similar but not the same. A class can be used multiple times. An ID cannot. An Id can only be used once in the whole document.</p>
+      <p>Furthermore an ID is defined by '#' not '.'. IDs and Classes can be used together. For exmaple. class="testClass" id="testID"</p>
+    </div>
+
+    <hr style="color: white;">
+
+    <div class="testClass">
+      <h2>Iframe</h2>
+      <p>Used to display a webpage within a webpage.</p>
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" style="height:300px;width:100%;border: none;" title="w3schools">Your browser does not support iframes.</iframe>
+    </div>
+
+    <hr style="color: white;">
+
+    <h2>File Paths</h2>
+    <p> img src="picture.jpg"	-------- The "picture.jpg" file is located in the same folder as the current page </p>
+    <p> img src="images/picture.jpg" -------- The "picture.jpg" file is located in the images folder in the current folder </p>
+    <p> img src="/images/picture.jpg" -------- The "picture.jpg" file is located in the images folder at the root of the current web </p>
+    <p> img src="../picture.jpg" -------- The "picture.jpg" file is located in the folder one level up from the current folder</p>
+
+    <hr style="color: white;">
+
+    <h2>HTML Layout Techniques</h2>
+    <p>There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:</p>
+    <ul>
+      <li>CSS Framework</li>
+      <li>CSS Float Property</li>
+      <li>CSS Flexbox</li>
+      <li>CSS Grids</li>
+    </ul>
+
+    <hr style="color: white;">
+
+    <h2>HTML Computer Code Elements</h2>
+    <p>The following is CODE:</p>
+    <code>
+      x = 5;
+      y = 6;
+      z = x + y;
+    </code>
+    <p>The following is KBD (keyboard input): <kbd>Ctrl + S</kbd></p>
+    <p>The following is SAMP (sample output): <samp><br>File not found.<br>Press F1 to continue</samp></p>
+    <p>The following is VAR:</p>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p> 
+
+    <hr style="color: white;">
+
+    <h2>Semantic Elements</h2>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+    <p>Examples of non-semantic elements: div and span - Tells nothing about its content.</p>
+    <p>Examples of semantic elements: form, table, and article - Clearly defines its content.</p>
+    <img src="https://www.w3schools.com/html/img_sem_elements.gif" max-width="100%">
+
+    <p>The section element defines a section in a document.</p>
+    <p>The article element specifies independent, self-contained content.</p>
+    <p>The header element represents a container for introductory content or a set of navigational links.</p>
+    <p>The footer element defines a footer for a document or section.</p>
+    <p>The nav element defines a set of navigation links.</p>
+    <p>The aside element defines some content aside from the content it is placed in (like a sidebar).</p>
+    <p>The figure tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. The figcaption tag defines a caption for a figure element. The figcaption element can be placed as the first or as the last child of a figure element.</p>
+    <p>The details tag specifies additional details that the user can open and close on demand. The details tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.</p>
+    <p>The main tag specifies the main content of a document. The content inside the main element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</p>
+    <p>The mark tag defines text that should be marked or highlighted.</p>
+    <hr style="color: white;">
+
+    <h2>Why Semantic Elements?</h2>
+    <p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</p>
+    
+    <hr style="color: white;">
+
+    <!--How to use html tags in document text. Lookup HTML Entities-->
+    <p>&lttest&gt</p>
+
+    <hr style="color: white;">
+
+    
 
   </body>
 </html>
