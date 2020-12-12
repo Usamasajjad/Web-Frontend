@@ -357,6 +357,87 @@
         </table>
         <hr>
         
-        <h2>Testing CSS</h2>
+        <h2>Common CSS Concepts/Properties</h2>
+        <p><b>CSS Background</b></p>
+        <p>
+          We can specify common background properties in a single line such as: <br>
+          <i>background: #ffffff url("img_tree.png") no-repeat right top;</i> <br>
+          The order of specifying properties is: <br>   
+          1. background-color <br>
+          2. background-image <br>
+          3. background-repeat <br>
+          4. background-attachment <br>
+          5. background-position <br>
+          It doesn't matter if a certain value is missing as long as propertiesare defined in order. 
+        </p>
+
+        <p><b>CSS Borders</b></p>
+        <p>
+          We can specify common border properties in a single line such as: <br>
+          border-left: 6px solid red; <br>
+          The order of specifying properties is: <br>
+          1. border-width <br>
+          2. border-style (required) <br>
+          3. border-color <br>
+          To make corners rounded, use border-radius property.
+        </p>
+
+        <p><b>CSS Margins</b></p>
+        <p id="mg">
+          The margin properties are used to create space around/outside of elements. We can
+          specify margins for each side of the element, i.e top/bottom/left/right. However, We
+          can also specify all of them in a single line, i.e margin: 50px 50px 50px 50px; <br>
+          We can also assign the value 'auto' to the margin property to have the element centered.
+        </p>
+        <p id="mg">
+          IMPORTANT: The top and bottom margins of elements are sometimes collapsed into a single 
+          margin that is equal to the largest of the two margins. For example if two adjacent elements,
+          h1 and h2 both have a margin value of 50, the margin between them will be 50 and not 100. This 
+          does not happen on left and right margins, Only on top and bottom margins. <br>
+          It can be avoided by adding a simple empty 'p' element in between.
+        </p>
+
+        <p><b>CSS Padding</b></p>
+        <p>
+          The padding properties are used to generate space around/inside an element's content.
+          We can specify paddings for each side of the element, i.e top/bottom/left/right. 
+          However, We can also specify all of them in a single line, i.e padding: 5px 10px 5px 10px; <br>
+          <br>
+          IMPORTANT: Padding adds to the total width of the element. This can be undesirable if the 
+          element has a widht that is not 100%. To avoid this, use box-sizing: border-box;.
+        </p>
+        
+        <p><b>CSS Box Model</b></p>
+        <p>
+          All HTML elements can be considered as boxes. In CSS, the term "box model" is used when 
+          talking about design and layout. The CSS box model is essentially a box that wraps around
+          every HTML element. It consists of: margins, borders, padding, and the actual content. 
+          In that order! Further description of the model: <br>
+          Content - The content of the box, where text and images appear <br>
+          Padding - Clears an area around the content. The padding is transparent <br>
+          Border - A border that goes around the padding and content <br>
+          Margin - Clears an area outside the border. The margin is transparent <br>
+          <br>
+          IMPORTANT: In order to set the width and height of an element correctly in all browsers,
+          The total width of an element should be calculated in the following manner: <br>
+          Total element width = width + left padding + right padding + left border + right border + left margin + right margin <br>
+          The total height of an element should be calculated in the following manner: <br>
+          Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+        </p>
+
+        <p><b>CSS Outlines</b></p>
+        <p>
+          An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+          Outline differs from borders. Unlike a border, the outline is drawn outside the element's border, and may 
+          overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total
+          width and height is not affected by the width of the outline. We can specify multiple outline 
+          properties in a single line i.e outline: 5px solid yellow;. The order is: <br>
+          1. outline-width <br>
+          2. outline-style (required) <br>
+          3. outline-color
+          We can also add space between the border and the outline using the 'outline-offset' property.
+        </p>
+
+
     </body>
 </html>
