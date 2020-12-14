@@ -438,6 +438,118 @@
           We can also add space between the border and the outline using the 'outline-offset' property.
         </p>
 
+        <p><b>CSS Text</b></p>
+        <p>
+          Common text declarations: <br>
+          1. color: blue; --- change text color. <br>
+          2. text-align: center/right/left/justify --- align text. <br>
+          3. text-decoration: none/overline/underline/line-through --- basic text decorations. <br>
+          4. text-transform: lowercase/uppercase/capitalize --- change text case. <br>
+          5. text-indent: 50px --- specify indent of first line of a para. <br>
+          6. letter-spacing: 5px --- specify space between letters. <br>
+          7. line-height: 2px --- specify space between lines. <br>
+          8. word-spacing: 5px --- specify space between individual words. <br>
+          9. text-shadow: 2px 2px 5px red; --- give shadow effect to text. Format: (horizontal)px (vertical)px (blur)px (color). <br>
+        </p>
+
+        <p><b>CSS Fonts</b></p>
+        <p>
+          Common font declarations: <br>
+          1. font-family: "Times New Roman", Times, serif; --- specify font family. <br>
+          2. font-size: px/%/large --- specify font size. <br>
+          3. font-style: normal/italic --- specify font style. <br>
+          4. font-variant: normal/smallcaps --- specify font variant. <br>
+          5. font-weight: normal/bold --- specify font weight. <br>
+          6. link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" --- link external fonts. <br>
+        </p>
+
+        <p><b>CSS Links</b></p>
+        <p>
+          Common link styling declarations: <br>
+          1. a:link --- for unvisited links. <br>
+          2. a:visited --- for visited links. <br>
+          3. a:hover --- for link hover. <br>
+          4. a:active --- for selecting/clicking on the link. <br>
+        </p>
+
+        <p><b>CSS Lists</b></p>
+        <p>
+          Common List styling declarations: <br>
+          1. list-style-type: circle/square/roman/none/etc --- specify item marker. <br>
+          2. list-style-image: url("abc.png") --- use an image as an item marker. <br>
+          3. list-style-position: inside/outside --- specify item marker position. <br> 
+        </p>
+
+        <p><b>CSS Tables</b></p>
+        <p>
+          Common Table styling declarations: <br>
+          1. border: 1px solid black --- specify table border. <br>
+          2. border-collapse: collapse --- table and th/td have separate borders. use this to remove double borders. <br>
+          3. widht/height --- use these properties to manipulate column/row heights. <br>
+          4. vertical-align/text-align --- use these properties to style text alignment. <br>
+          5. tr:hover --- use to style table rows on hover. <br>
+        </p>
+
+        <p><b>CSS Display Property</b></p>
+        <p>
+          The display property specifies if/how an element is displayed. Every HTML
+          element has a default display value depending on what type of element it is. 
+          The default display value for most elements is block or inline. <br>
+          A block-level element always starts on a new line and takes up the full width
+          available (stretches out to the left and right as far as it can). <br>
+          An inline element does not start on a new line and only takes up as much width as necessary. <br>
+          Display: Inline; --- make an element behave as inline. <br>
+          Display: Block; --- make and element behave as block. <br>
+          Tip: Use max-width instead of width to better handle block elements upon resizing. <br>
+        </p>
+
+        <p><b>CSS Position Property</b></p>
+        <p>
+          The position property specifies the type of positioning method used for an element.
+          There are five different position values: <br> 
+          1. Static --- it is default for all html elements and not positioned in any special way. <br>
+          2. Relative --- positioned relative to its normal position. must set right/left/top/bottom = px value. <br>
+          3. Fixed --- always stays in the same place even if the page is scrolled like 'scroll to top'. <br>
+          4. Absolute ---  is positioned relative to the nearest positioned ancestor. <br>
+          5. Sticky --- is positioned based on the user's scroll position. <br>
+          Tip: z-index: -1 or 1; allows us to overlap elements the way we want. <br>
+        </p>
+
+        <p><b>CSS Overflow Property</b></p>
+        <p>
+          The overflow property specifies whether to clip the content or to add 
+          scrollbars when the content of an element is too big to fit in the specified area. <br>
+          1. overflow: visible; --- content isnt clipped and is visible outside the box. <br>
+          2. overflow: hidden; --- content is clipped and hidden outside the box. <br>
+          3. overflow: scroll; --- content is clipped and scrollbar appears. <br>
+          4. overflow; auto; --- similar to scroll but adds scrollbar only when necessary. <br>
+          5. overflow-x/overflow-y --- assign above values to specific axis. i.e enable horizontal scroll only. <br>
+        </p>
+
+        <p><b>CSS Float Property</b></p>
+        <p>
+          The float property is used for positioning and formatting content e.g. 
+          let an image float left to the text in a container. <br>
+          1. float: right; --- The element floats to the right of its container. <br>
+          2. float: left; --- The element floats to the left of its container. <br>
+          3. float: none; --- The element does not float. <br>
+          The clear property specifies what elements can float beside the cleared element and on which side. <br>
+          1. clear: none; --- allows floating elements 
+          Grid of Boxes / Equal Width Boxeson both sides. <br>
+          2. clear: both; --- no floating elements allowed on either side. <br>
+          3. clear: left; --- no floating elements allowed on the left side. <br>
+          4. clear: right; --- no floating elements allowed on the right side. <br>
+          The most common way to use the clear property is after you have used a float property on an element. <br>
+        </p>
+
+        <p><b>CSS Inline Block</b></p>
+        <p>
+          Compared to display: inline, the major difference is that display: inline-block allows
+          us to set width and height of the element. Also, with display: inline-block, the top and 
+          bottom margins/paddings are respected. Compared to display: block, the major difference 
+          is that display: inline-block does not add a line-break after the element, so the element can 
+          sit next to other elements.
+        </p>
 
     </body>
 </html>
