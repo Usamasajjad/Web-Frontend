@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    background: dodgerblue;
+    flex-direction: row; /* can be row | row-reverse | column | column-reverse */
+    flex-wrap: wrap; /* can be wrap | nowrap | wrap-reverse */
+    /* 
+    flex-flow: row wrap; A shorthand for both flex-direction and flex-wrap 
+    */
+    justify-content: space-evenly; /* can be flex-start | flex-end | center | space-between | space-evenly | space-around */
+    align-items: stretch; /* can be flex-start | flex-end | center | stretch | baseline */
+    align-content: stretch; /* can be flex-start | flex-end | center | space-between | space-around */
+    height: 500px;
+}
+
+.container > div {
+    background-color: lightgrey;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5vw;
+    width: 200px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    background: yellow;
+    flex-direction: row; /* can be row | row-reverse | column | column-reverse */
+    align-items: stretch;
+    height: 300px;
+}
+
+.container2 > div {
+    background-color: lightgrey;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5vw;
+    width: 100px;
+    text-align: center;
+}
+
+
+hr {
+    color: black;
+}
