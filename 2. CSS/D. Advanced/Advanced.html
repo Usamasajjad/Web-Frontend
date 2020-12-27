@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="author" content="Usama Sajjad">
+        <meta name="description" content="This document holds my complete understanding of Advanced CSS concepts.">
+        <meta name="keywords" content="HTML, CSS, Advanced">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <link href="Advanced.css" rel="stylesheet">
+    </head>
+    <body>
+       <p style="background: yellow; font-size: 32px;"><b>CSS Transforms</b></p>
+       <p>
+          CSS transforms allow us to move, rotate, scale, and skew elements.
+          The following are some 2D transformation methods: <br>
+          translate() <br>
+          rotate() <br>
+          scaleX() <br>
+          scaleY() <br>
+          scale() <br>
+          skewX() <br>
+          skewY() <br>
+          skew() <br>
+          matrix() <br>
+       </p>
+
+       <p><b>CSS Translate</b></p>
+       <p>
+          The translate() method moves an element from its current position 
+          (according to the parameters given for the X-axis and the Y-axis).
+       </p>
+       <div class="translater">
+           This is a translated div!
+       </div>
+
+       <p><b>CSS Rotate</b></p>
+       <p>
+          The rotate() method rotates an element clockwise or counter-clockwise according to a given degree. 
+       </p>
+       <br>
+       <br>
+       <div class="transformer">
+           This is a rotated div!
+       </div>
+
+       <p><b>CSS Scale</b></p>
+       <p>
+           The scale() method increases or decreases the size of an element (according to the 
+           parameters given for the width and height).
+       </p>
+
+       <div class="scaled">
+           This is a scaled div!
+       </div>
+
+       <p><b>CSS Skew</b></p>
+       <p>
+        The skew() method skews an element along the X and Y-axis by the given angles.
+       </p>
+       <div class="skewed">
+           This is a skewed div!
+       </div>
+
+       <p><b>CSS Matrix</b></p>
+       <p>
+        The matrix() method combines all the 2D transform methods into one.
+        The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+        The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+       </p>
+       <div class="matrix">
+           This is matrix'd div!
+       </div>
+
+       <p><b>CSS 3D Transforms</b></p>
+       <p>
+        With the CSS transform property you can use the following 3D transformation methods: <br>
+        rotateX(90deg) <br>
+        rotateY(90deg) <br>
+        rotateZ(90deg) <br>
+       </p>
+       
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>CSS Transitions</b></p>
+       <p>
+        CSS transitions allows you to change property values smoothly, over a given duration.
+        The following are common transition properties: <br>
+        1. transition: A shorthand property for setting the four transition properties into a single property <br>
+        2. transition-delay: Specifies a delay (in seconds) for the transition effect <br>
+        3. transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete <br>
+        4. transition-property: Specifies the name of the CSS property the transition effect is for <br>
+        5. transition-timing-function: Specifies the speed curve of the transition effect <br>
+        <br>
+        To create a transition effect, you must specify two things: <br>
+        a. the CSS property you want to add an effect to <br>
+        b. the duration of the effect <br>  
+       </p>
+        
+       <div class="transitions">
+           This is a transition! Made by using delay/duration/property/timing-function properties.
+       </div>
+       <div class="somethingcool">
+           This is also a transition! Made by using the shorthand transition property.
+       </div>
+
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>CSS Animations</b></p>
+       <p>
+        CSS allows animation of HTML elements without using JavaScript.
+        An animation lets an element gradually change from one style to another.
+        To use CSS animation, you must first specify some keyframes for the animation.
+        Keyframes hold what styles the element will have at certain times. <br>
+        The following are common declarations for animations:<br>    
+        1. @keyframes: specifies the animation code. legal values are ---> from{} -- to{} -- 0%{} to 100%{}. <br>
+        2. animation-name: specifies a name to bind the keyframe to the element. <br>
+        3. animation-duration: defines how long an animation should take to complete. <br>
+        4. animation-delay: specifies a delay for the start of an animation. <br>
+        5. animation-iteration-count: specifies the number of times an animation should run. <br>
+        6. animation-direction: specifies whether an animation should be played forwards, backwards or in alternate cycles. <br>
+        7. animation-timing-function: specifies the speed curve of the animation. <br>
+        8. animation-fill-mode: specifies a style for the target element when the animation is not playing. <br>
+        9. animation: shorthand property. order ---> name -- duration -- timing-function -- delay -- iteration-count -- direction. <br>
+       </p>
+       <div class="animated">
+        This is an animated div!
+       </div>
+       <div class="animated2">
+           Hey!
+       </div>
+
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>CSS Media Queries</b></p>
+       <p>
+         Media queries allow us to change the layout of the page or the properties of elements
+         upon broswer resizing. This allows us to deliver a better more personalized experience
+         on all devices. An example of media queries would be: Using a 6x6 grid on desktop but 
+         rearraging it to 2x2x2x2x2 for mobile.
+       </p>
+       <p>
+        @media print {} is used to define how the page will look if it is printed. <br>
+        @media screen and (min-width: 300px) {} is used to define how the page will look
+        for different widths. The properties we can use are min-width/max-width. 
+        The connector we can use are and | or | not. We can also target different device 
+        orientations for example: @media screen and (orientation: landscape) and (min-width: 300px). <br>
+        <br>
+        Example: //change background to black for devices with min width of 300 or greater. <br>
+        <pre>
+        @media screen and (min-width: 300px) {
+            body {
+                background: black;
+            }
+        }
+        </pre>
+       </p>
+
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>CSS Background Clip</b></p>
+       <p>
+           The background clip property allows us to create unique text decorations.
+       </p>
+       <div class="clipped">
+           Hey there! I'm Usama!
+       </div>
+       <div class="clipped2">
+           Hey there! How are ya!
+       </div>
+       
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>CSS Variables</b></p>
+       <p>
+           CSS Variales are mostly used to define styles only once as variables. Then use those
+           variables through out the document. For example: background: var(--mycolor); is easier
+           to define than background: 2DAD2D;. CSS variables have access to the DOM, which means
+           that you can create variables with local or global scope, change the variables with 
+           JavaScript, and change the variables based on media queries. Best practice is to define
+           them in the :root of the CSS. <br>
+           Example: //This is how we make and use variables. <br>
+           <pre>
+               :root {
+                   --mycolor: blue;
+               }
+               #logo {
+                   background: var(--mycolor);
+               }
+           </pre>
+       </p>
+       <hr>
+
+       <p style="background: yellow; font-size: 32px;"><b>Follow CSS Best Practices and Keep Learning!</b></p>
+
+       <hr>
+
+
+
+    </body>
+</html>

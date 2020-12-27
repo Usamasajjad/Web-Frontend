@@ -61,7 +61,7 @@
          <hr>
 
          <p><b>Justify-Content and Align-Content</b></p>
-         <div class="container3">
+         <div class="grid-container3">
             <div class="grid-item">1</div>
             <div class="grid-item">2</div>
             <div class="grid-item">3</div>
@@ -70,10 +70,61 @@
             <div class="grid-item">6</div>
             <div class="grid-item">7</div>
             <div class="grid-item">8</div>
+         </div>
+         <p>
+            The justify-content property is used to align the whole grid inside the container.
+            The align-content property is used to vertically align the whole grid inside the container.
+         </p>
+
+         <hr>
+
+         <p style="background-color: yellow;"><b>CSS Grid Item Properties</b></p>
+         <p><b>CSS Grid-Column and Grid-Row</b></p>
+         <div class="grid-container4">
+            <div class="grid-item1">1</div>
+            <div class="grid-item2">2</div>
+            <div class="grid-item3">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item4">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
             <div class="grid-item">9</div>
             <div class="grid-item">10</div>
-            <div class="grid-item">11</div>
-            <div class="grid-item">12</div>
+            <div class="grid-item1">11</div>
+            <div class="grid-item2">12</div>
          </div>
+         <p>
+            The grid-column property is a shorthand property for the grid-column-start 
+            and the grid-column-end properties. The grid-row property is a shorthand property
+            for the grid-row-start and the grid-row-end properties. 
+            The grid-area property can be used as a shorthand property for the grid-row-start, 
+            grid-column-start, grid-row-end and the grid-column-end properties. <br>
+            <br>
+            We can also name items using grid-are property and then easily create a layout
+            using grid-template-areas property as follows. <br>
+            <pre>
+                .item1 { grid-area: header; } 
+                .item2 { grid-area: menu; } 
+                .item3 { grid-area: main; } 
+                .item4 { grid-area: right; } 
+                .item5 { grid-area: footer; } 
+                    
+                .grid-container { 
+                    display: grid; 
+                    grid-template-areas: 
+                    'header header header header header header' 
+                    'menu main main main right right' 
+                    'menu footer footer footer footer footer'; 
+                    grid-gap: 10px; 
+                    background-color: #2196F3; 
+                    padding: 10px; 
+                } 
+            </pre>
+         </p>
+
+         <hr>
+
+         
     </body>
 </html>

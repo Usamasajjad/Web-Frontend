@@ -1,0 +1,190 @@
+.translater {
+    background: chartreuse;
+    color: black;
+    font-size: large;
+    transform: translate(100px, 0px);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.transformer {
+    background: chartreuse;
+    color: black;
+    font-size: large;
+    transform: rotate(15deg);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.scaled {
+    background: chartreuse;
+    margin: 100px;
+    color: black;
+    font-size: large;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transform: scale(2,3);
+}
+
+.skewed {
+    background: chartreuse;
+    margin: 100px;
+    color: black;
+    font-size: large;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transform: skew(20deg,10deg);
+}
+
+.matrix {
+    background: chartreuse;
+    margin: 100px;
+    color: black;
+    font-size: large;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+.transitions {
+    background: orange;
+    color: black;
+    margin: 100px;
+    font-size: large;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    transition-property: width, height;
+    transition-delay: 0.2s, 0.2s;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.transitions:hover {
+    width: 400px;
+    height: 400px;
+}
+
+.somethingcool {
+    background: orange;
+    color: black;
+    margin: 100px;
+    font-size: large;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: width 0.5s ease-in-out 0.2s, height 0.5s ease-in-out 0.2s, transform 0.5s ease-in-out 0.2s;
+    /* Order: PROPERTY    DURATION    TIMING-FUNCTION     DELAY*/
+}
+
+.somethingcool:hover {
+    width: 400px;
+    height: 400px;
+    transform: rotate(-30deg);
+}
+
+.animated {
+    background: orange;
+    color: black;
+    font-size: large;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    animation-name: testanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+.animated2 {
+    height: 250px;
+    width: 250px;
+    margin: 100px auto;
+    background-color: red;
+    animation-name: testanim2;
+    text-align: center;
+    line-height: 125px;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+
+  @keyframes testanim {
+    0% {
+        background-color:red; 
+        left:0px; 
+        top:0px;
+      }
+    50% {
+        background-color:yellow; 
+        left:400px; 
+        top:0px; 
+      }
+    100% {
+        background-color:red;
+        left:0px; 
+        top:0px;
+      }
+  }
+
+  @keyframes testanim2 {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
+
+
+.clipped {
+    font-size: 42px;
+    font-weight: 1000;
+    color: transparent;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 14px;
+    text-align: center;
+    background-image: url("https://data.whicdn.com/images/71931645/original.gif");
+    background-position: center;
+    background-clip: text;
+}
+
+.clipped2 {
+    font-size: 42px;
+    font-weight: 1000;
+    color: transparent;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 14px;
+    text-align: center;
+    background-image: linear-gradient(to top right, blueviolet, purple);
+    background-position: center;
+    background-clip: text;
+}
